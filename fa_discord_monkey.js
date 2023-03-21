@@ -21,10 +21,12 @@
 	)[0];
 	var title = info.children[0].innerHTML;
 	var artist = info.children[1].innerHTML;
+	var date =
+		Date.parse(document.getElementsByClassName("popup_date")[0].title) / 1000;
 	document.onkeydown = (e) => {
 		if (e.altKey == true && e.ctrlKey == true && e.key == "f") {
 			navigator.clipboard.writeText(
-				`${imageURL}\n> <${url}>\n> *${title}*\n> by **${artist}**`
+				`${imageURL}\n> <${url}>\n> *${title}*\n> by **${artist}**\n> <t:${date}:F>`
 			);
 			console.log("🐇 copied!");
 		}
