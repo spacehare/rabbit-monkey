@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  grabs FurAffinity submission information to display on Discord
-// @author       You
+// @author       https://github.com/spacehare
 // @match        https://www.furaffinity.net/view/*
 // @grant        none
 // @run-at document-end
